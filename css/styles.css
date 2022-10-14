@@ -82,13 +82,20 @@ html {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0 auto;
+}
+
 /* header-section */
 
 .header {
-  /* margin: 0 auto; */
+  border-bottom: 1px solid var(--header-border-color);
+
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .logo {
@@ -142,6 +149,9 @@ html {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--dark-bg-color);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -150,6 +160,8 @@ html {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
 }
 
 .main-btn {
@@ -164,6 +176,9 @@ html {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+
+  padding: 10px 20px;
+  margin-top: 30px;
 }
 
 .main-btn:focus,
