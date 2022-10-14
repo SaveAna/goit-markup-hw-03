@@ -309,6 +309,13 @@ p {
   background-color: var(--dark-bg-color);
 }
 
+.footer .container {
+  /* background, щоб при зміні масштабу сторінки не з'їзджав фон */
+  background-color: var(--dark-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .logo {
   color: var(--primary-white-color);
 }
@@ -324,6 +331,17 @@ p {
 
 .footer .contact {
   color: var(--footer-contacts-color);
+}
+
+/* ------------------------- */
+
+.footer .list {
+  width: 231px;
+  margin-top: 9px;
+}
+
+.footer .list .item:not(:first-child) {
+  margin-top: 2px;
 }
 
 /* portfolio-section 
