@@ -217,6 +217,7 @@ p {
 
 .features-group {
   display: flex;
+  justify-content: space-between;
 }
 
 .features-group .item {
@@ -229,6 +230,22 @@ p {
 
 .feature-description {
   margin-top: 10px;
+}
+
+/* works-section */
+
+.works {
+  padding-bottom: 94px;
+}
+
+.works .list {
+  display: flex;
+  width: calc((100%-2 * 30px) / 3);
+  margin-top: 50px;
+}
+
+.works .list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* teammates-section */
@@ -258,6 +275,8 @@ p {
   color: var(--basic-text-color);
   letter-spacing: 0.03em;
 }
+
+/* ------------------------------- */
 
 /* footer-section */
 
