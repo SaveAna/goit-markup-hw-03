@@ -94,6 +94,10 @@ p {
   padding-bottom: 94px;
 }
 
+.no-gap {
+  display: block;
+}
+
 /* header-section */
 
 .header {
@@ -254,6 +258,11 @@ p {
   background-color: var(--light-bg-color);
 }
 
+.teammates .section {
+  /* background, щоб при зміні масштабу сторінки не з'їзджав фон */
+  background-color: var(--light-bg-color);
+}
+
 .teammate-card {
   text-align: center;
   background-color: var(--primary-white-color);
@@ -274,9 +283,25 @@ p {
   line-height: 1.19;
   color: var(--basic-text-color);
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 /* ------------------------------- */
+
+.teammates .list {
+  display: flex;
+  width: calc((100%-3 * 30px) / 4);
+  margin-top: 50px;
+}
+
+.teammate-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.teammate-card .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* footer-section */
 
