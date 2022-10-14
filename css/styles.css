@@ -348,6 +348,7 @@ p {
 portfolio filter-buttons */
 
 .filter-btn {
+  display: inline-block;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -357,6 +358,8 @@ portfolio filter-buttons */
   background-color: var(--light-bg-color);
   border-color: transparent;
   border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .filter-btn:hover,
@@ -366,6 +369,18 @@ portfolio filter-buttons */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+/* ------------------------------- */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* projects-section */
