@@ -73,7 +73,9 @@ body {
 }
 
 /* header-section */
-
+.header * {
+  border: 1px solid tomato;
+}
 .header {
   border-bottom: 1px solid var(--header-border-color);
 }
