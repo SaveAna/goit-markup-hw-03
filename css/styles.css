@@ -89,6 +89,11 @@ p {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* header-section */
 
 .header {
@@ -136,6 +141,7 @@ p {
 .contacts {
   display: flex;
   margin-left: auto;
+  justify-content: space-between;
 }
 
 .menu-nav .item:not(:last-child),
@@ -144,14 +150,19 @@ p {
 }
 
 /* hero section */
-
+.hero .container {
+  /* background, щоб при зміні масштабу сторінки не з'їзджав фон */
+  background-color: var(--dark-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--dark-bg-color);
-
+  /* 
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 200px; */
 }
 
 .hero-title {
@@ -200,6 +211,24 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
+}
+
+/* ---------------------------- */
+
+.features-group {
+  display: flex;
+}
+
+.features-group .item {
+  width: calc((100%-3 * 30px) / 4);
+}
+
+.features-group .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-description {
+  margin-top: 10px;
 }
 
 /* teammates-section */
