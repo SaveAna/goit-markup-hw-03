@@ -8,6 +8,7 @@
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
   --header-border-color: #ececec;
+  --project-border-color: #eeeeee;
   --card-gap: 30px;
 }
 
@@ -152,13 +153,7 @@ p {
   display: flex;
   margin-left: auto;
   gap: 50px;
-  justify-content: space-between;
 }
-
-/* .menu-nav .item:not(:last-child),
-.contacts .item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 /* hero section */
 
@@ -177,10 +172,8 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 .main-btn {
@@ -331,8 +324,6 @@ p {
 portfolio filter-buttons */
 
 .filter-btn {
-  /* display: inline-block;
-  box-sizing: border-box; */
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -360,9 +351,6 @@ portfolio filter-buttons */
 .filter {
   display: flex;
   justify-content: center;
-  max-width: 611px;
-  margin-right: auto;
-  margin-left: auto;
   gap: 8px;
 }
 
@@ -393,8 +381,11 @@ portfolio filter-buttons */
 
 .project-card {
   flex-basis: calc(100% / 3 - var(--card-gap));
+  background-color: var(--primary-white-color);
 }
 
 .text-content {
   padding: 20px 24px;
+  border: 1px solid var(--project-border-color);
+  border-top: transparent;
 }
