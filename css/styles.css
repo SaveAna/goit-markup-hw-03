@@ -8,6 +8,7 @@
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
   --header-border-color: #ececec;
+  --card-gap: 30px;
 }
 
 /* basic rules */
@@ -86,7 +87,7 @@ h1,
 h2,
 h3,
 p {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .section {
@@ -120,6 +121,8 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .header .contact {
@@ -128,6 +131,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--basic-text-color);
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 /* ----------------------------- */
@@ -140,33 +145,30 @@ p {
 .menu-nav {
   display: flex;
   margin-left: 93px;
+  gap: 50px;
 }
 
 .contacts {
   display: flex;
   margin-left: auto;
+  gap: 50px;
   justify-content: space-between;
 }
 
-.menu-nav .item:not(:last-child),
+/* .menu-nav .item:not(:last-child),
 .contacts .item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
 /* hero section */
-.hero .container {
-  /* background, щоб при зміні масштабу сторінки не з'їзджав фон */
-  background-color: var(--dark-bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 .hero {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--dark-bg-color);
-  /* 
+
   padding-top: 200px;
-  padding-bottom: 200px; */
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -176,7 +178,9 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  width: 696px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-btn {
@@ -221,15 +225,11 @@ p {
 
 .features-group {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .features-group .item {
-  width: calc((100%-3 * 30px) / 4);
-}
-
-.features-group .item:not(:last-child) {
-  margin-right: 30px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .feature-description {
@@ -244,22 +244,13 @@ p {
 
 .works .list {
   display: flex;
-  width: calc((100%-2 * 30px) / 3);
+  gap: var(--card-gap);
   margin-top: 50px;
-}
-
-.works .list .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* teammates-section */
 
 .teammates {
-  background-color: var(--light-bg-color);
-}
-
-.teammates .section {
-  /* background, щоб при зміні масштабу сторінки не з'їзджав фон */
   background-color: var(--light-bg-color);
 }
 
@@ -290,27 +281,19 @@ p {
 
 .teammates .list {
   display: flex;
-  width: calc((100%-3 * 30px) / 4);
+  gap: var(--card-gap);
+  flex-basis: calc((100%-3 * var(--card-gap)) / 4);
   margin-top: 50px;
 }
 
-.teammate-card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .teammate-card .content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: var(--card-gap);
+  padding-bottom: var(--card-gap);
 }
 
 /* footer-section */
 
 .footer {
-  background-color: var(--dark-bg-color);
-}
-
-.footer .container {
-  /* background, щоб при зміні масштабу сторінки не з'їзджав фон */
   background-color: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -336,19 +319,20 @@ p {
 /* ------------------------- */
 
 .footer .list {
-  width: 231px;
-  margin-top: 9px;
+  max-width: 231px;
+  margin-top: 20px;
 }
 
 .footer .list .item:not(:first-child) {
-  margin-top: 2px;
+  margin-top: 9px;
 }
 
 /* portfolio-section 
 portfolio filter-buttons */
 
 .filter-btn {
-  display: inline-block;
+  /* display: inline-block;
+  box-sizing: border-box; */
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -358,8 +342,8 @@ portfolio filter-buttons */
   background-color: var(--light-bg-color);
   border-color: transparent;
   border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+
+  padding: 6px 22px;
 }
 
 .filter-btn:hover,
@@ -376,11 +360,10 @@ portfolio filter-buttons */
 .filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-}
-
-.filter .item:not(:last-child) {
-  margin-right: 8px;
+  max-width: 611px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 8px;
 }
 
 /* projects-section */
@@ -396,4 +379,22 @@ portfolio filter-buttons */
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
+  margin-top: 4px;
+}
+
+/* ------------------------------ */
+
+.project-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+  margin-top: 50px;
+}
+
+.project-card {
+  flex-basis: calc(100% / 3 - var(--card-gap));
+}
+
+.text-content {
+  padding: 20px 24px;
 }
