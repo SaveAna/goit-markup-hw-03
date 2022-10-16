@@ -96,8 +96,9 @@ p {
   padding-bottom: 94px;
 }
 
-.img {
+img {
   display: block;
+  max-width: 100%;
 }
 
 /* header-section */
