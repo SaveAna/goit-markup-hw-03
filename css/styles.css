@@ -96,7 +96,7 @@ p {
   padding-bottom: 94px;
 }
 
-.no-gap {
+.img {
   display: block;
 }
 
@@ -104,9 +104,6 @@ p {
 
 .header {
   border-bottom: 1px solid var(--header-border-color);
-
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo {
@@ -118,22 +115,24 @@ p {
 }
 
 .navigation .link {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header .contact {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--basic-text-color);
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* ----------------------------- */
