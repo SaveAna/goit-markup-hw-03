@@ -171,8 +171,10 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-left: 252px;
-  padding-right: 252px;
+
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-btn {
