@@ -312,8 +312,7 @@ p {
 
 /* ------------------------- */
 
-.footer .list {
-  max-width: 231px;
+.footer .address-list {
   margin-top: 20px;
 }
 
