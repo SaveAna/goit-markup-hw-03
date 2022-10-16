@@ -299,6 +299,7 @@ p {
 
 .footer .map-point,
 .footer .contact {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
