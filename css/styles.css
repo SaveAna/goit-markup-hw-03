@@ -382,7 +382,7 @@ portfolio filter-buttons */
 }
 
 .project-card {
-  flex-basis: ((100%- 2 * var(--card-gap))/3);
+  flex-basis: calc((100%- 2 * var(--card-gap))/3);
   background-color: var(--primary-white-color);
 }
 
